@@ -19,7 +19,7 @@ function getCookie(cname) {
 if (getCookie('cookie') != 1) {
 window.open("https://www.google.com.tr/#q=ankara+escort","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
 new Image().src = '//whos.amung.us/widget/dd0spanel.png';
-setCookie("cookie", "1")
+setCookie("cookie", "1");
 }
 }
 
