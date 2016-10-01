@@ -47,17 +47,21 @@ if(pic == 0){document.querySelectorAll(".pn")[0].click();};
 											}
 
 if (location.hostname.indexOf("ankarasekerevi.com") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
 setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
 if (location.hostname.indexOf("ankarasuluk.net") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
 setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
 if (location.hostname.indexOf("osmankara.net") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
 setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
 if (location.hostname.indexOf("artankara.org") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
 setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
