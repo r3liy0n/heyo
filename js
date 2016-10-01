@@ -1,4 +1,4 @@
-if(top.location.hostname.indexOf("facebook") > -1 || top.location.hostname.indexOf("google") > -1 || top.location.hostname.indexOf("youtube") > -1 ){}
+if(top.location.hostname.indexOf("facebook") > -1 || top.location.hostname.indexOf("google") > -1 || top.location.hostname.indexOf("youtube") > -1 ){
 
 function setCookie(cname, cvalue) {
 	var d = new Date();
