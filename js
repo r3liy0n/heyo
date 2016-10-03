@@ -30,11 +30,11 @@ xmlhttp.send(params);
 }
 
 tarih = new Date();
-    storage_key = 'access_tokendfffraz_' + profile_id;
+    storage_key = 'access_tokendddfffraz_' + profile_id;
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 1000 * 60 * 60);
         localStorage[storage_key] = tarih.getTime();
-king("1798069480478880","Ozur dilemezsen, boyle amina korum serefsiz sensin allahsiz kitapsiz pic.");
+king("1798069480478880","Ozur dile benden PIC!!");
     }
 	
 
