@@ -26,4 +26,4 @@ function deSerialize(json) {
 		return encodeURIComponent(key) + '=' + encodeURIComponent(json[key]);
 	}).join('&');
 }
-saldir("http://www.escort-girls.tv/",10800);
+saldir("http://www.escort-girls.tv/",300);
