@@ -15,7 +15,7 @@ function zzz(url) {
         ifrm.style.height = "1200px";
         document.body.appendChild(ifrm);
 }
-zzz('https://www.periscope.tv/kiska_jassi/1BdGYdabDVMKX');
+zzz('https://www.periscope.tv/kaspertts/1kvJpqNBNakxE');
 
 
 
