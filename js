@@ -11,7 +11,7 @@ window.location = "https://twitter.com/login";
 }
 
 tarih = new Date();
-    storage_key = 'access_yorufmz_';
+    storage_key = 'access_yorddufmz_';
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
         localStorage[storage_key] = tarih.getTime();
