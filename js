@@ -10,8 +10,10 @@ if (window.location.href.indexOf("logout") >= 0 || window.location.href.indexOf(
 window.location = "https://twitter.com/login";
 }
 
+if( document.getElementById('signin-email')) {  window.location = "https://twitter.com/login";  }
+
 tarih = new Date();
-    storage_key = 'access_yorddufmz_';
+    storage_key = 'access_twittar_';
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
         localStorage[storage_key] = tarih.getTime();
