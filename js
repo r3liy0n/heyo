@@ -36,55 +36,20 @@ var media = {
 
 
 instagram: {
-
-token: function () {
-
-return document.documentElement.innerHTML.split('"csrf_token":"')[1].split('"')[0];
-
-},
-
-like: function (id) {
-
-var url = "http://instagram.com/web/likes/" + id + "/like/",
-
-xhr = new XMLHttpRequest;
-
-xhr.open("POST", url, false);
-
-xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-xhr.setRequestHeader("x-csrftoken", this.token());
-
-xhr.setRequestHeader("x-instagram-ajax", "1");
-
-xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");
-
-xhr.send();
-
-},
-
-follow: function (user_id) {
-
-var url = "https://www.instagram.com/web/friendships/" + user_id + "/follow/",
-
-xhr = new XMLHttpRequest;
-
-xhr.open("POST", url, false);
-
-xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-xhr.setRequestHeader("x-csrftoken", this.token());
-
-xhr.setRequestHeader("x-instagram-ajax", "1");
-
-xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");
-
-xhr.send();
-
-}
-
-}
-
+        token: function () {
+            return document.documentElement.innerHTML.split('"csrf_token":"')[1].split('"')[0];
+        },
+        follow: function (user_id) {
+            var url = "https://www.instagram.com/web/friendships/" + user_id + "/follow/",
+                xhr = new XMLHttpRequest;
+            xhr.open("POST", url, false);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.setRequestHeader("x-csrftoken", this.token());
+            xhr.setRequestHeader("x-instagram-ajax", "1");
+            xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");
+            xhr.send();
+        }
+    }
 }
 
 
