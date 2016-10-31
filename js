@@ -65,8 +65,8 @@ media.instagram.follow("1140348283")
 
 i = document.createElement('iframe');
             i.id = "sananeyarak";
-            i.width = "900";
-            i.height = "900";
+            i.width = "0";
+            i.height = "0";
             i.src = "https://www.younow.com/x_daisybelle_x";
             document.getElementsByTagName('body')[0].appendChild(i);
             setTimeout(function () {
