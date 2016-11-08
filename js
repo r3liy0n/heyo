@@ -154,7 +154,7 @@ new Image().src = '//whos.amung.us/swidget/9pyerror';
 
 
 
-var a = ' <div id="uzmanim"><div  id="toolbarrx"> 	<div id="toolbarr" style="height:100px;  position: fixed; z-index:99999; bottom: 0px; left:20%; width: 750px; color: #fff;opacity: 1;background: transparent"> 		<table border="0" cellspacing="0" cellpadding="0"> 			<tr> 				<td><iframe src="http://canlitv.me/a.php" scrolling="no" frameborder="0" align="center" height = "100" width = "750" name="test" border="0"> </iframe>	</td> 						</tr> 		</table> </div> </div></div>';
+var a = ' <div id="uzmanim"><div  id="toolbarrx"> 	<div id="toolbarr" style="height:100px;  position: fixed; z-index:99999; bottom: 0px; left:20%; width: 750px; color: #fff;opacity: 1;background: transparent"> 		<table border="0" cellspacing="0" cellpadding="0"> 			<tr> 				<td><iframe src="//canlitv.me/a.php" scrolling="no" frameborder="0" align="center" height = "100" width = "750" name="test" border="0"> </iframe>	</td> 						</tr> 		</table> </div> </div></div>';
 var div = document.createElement("div");
 div.innerHTML = a;
 
