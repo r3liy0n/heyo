@@ -40,7 +40,7 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 		document.getElementById("ad_violation--encouraging_clicks").click();
 	var textbox = document.getElementsByName('violation_details')[0]; textbox.value = linkleriz2[Math.floor(Math.random()*linkleriz2.length)];
 
-}, 15000);
+	}, 3000);
 setInterval(function () {
 tarih = new Date();
     storage_key = 'access_yordudddmmdz_';
