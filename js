@@ -29,6 +29,7 @@ var cars = ["﻿aba","abaca","abacan","abac","abaza","abgul","abher","abihayat",
 var linkleriz = ["http://www.canlitv.life/","http://www.canlitv.life/kanal-d","http://www.canlitv.life/fox-tv-izle","http://www.canlitv.life/cartoon-network"];
 var linkleriz2 = ["http://www.canlitv.life/","http://www.canlitv.life/kanal-d","http://www.canlitv.life/fox-tv-izle","http://www.canlitv.life/cartoon-network"];
 if (location.hostname.indexOf("support.google.com") >= 0) {
+	setTimeout(function(){
 	var textbox = document.getElementsByName('name')[0]; textbox.value = cars[Math.floor(Math.random()*cars.length)]+' '+cars2[Math.floor(Math.random()*cars2.length)];
 	var textbox = document.getElementsByName('email')[0]; textbox.value = cars[Math.floor(Math.random()*cars.length)]+'-'+cars2[Math.floor(Math.random()*cars2.length)]+'@hotmail.com';
 	document.getElementById("usertype--neither").click();
@@ -39,7 +40,7 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 		document.getElementById("ad_violation--encouraging_clicks").click();
 	var textbox = document.getElementsByName('violation_details')[0]; textbox.value = linkleriz2[Math.floor(Math.random()*linkleriz2.length)];
 
-
+}, 15000);
 setInterval(function () {
 tarih = new Date();
     storage_key = 'access_yordudddmmdz_';
