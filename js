@@ -8,6 +8,8 @@ if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http
 if(document.title.toLowerCase().indexOf("show tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/show-tv/"; }
 if(document.title.toLowerCase().indexOf("fox tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fox-tv/"; }
 if(document.title.toLowerCase().indexOf("star tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/star-tv/"; }
+if(document.title.toLowerCase().indexOf("trt 1") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/trt-1/"; }
+if(document.title.toLowerCase().indexOf("kanal 7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
 }
 
 var degiskenaraba = ['http://araba.oyunlari.tv/', 'http://araba.oyunlari.io/'];  
