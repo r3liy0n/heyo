@@ -1,9 +1,11 @@
 if(location.hostname.indexOf("canlitvc") < 0) {
-	if(document.title.toLowerCase().indexOf("canlı tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/atv/"; }
+if(document.title.toLowerCase().indexOf("canlı tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/atv/"; }
 if(document.title.toLowerCase().indexOf("atv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/atv/"; }
 if(document.title.toLowerCase().indexOf("tv8") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tv-8/"; }
 if(document.title.toLowerCase().indexOf("aspor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
 if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
+if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
+if(document.title.toLowerCase().indexOf("show tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/show-tv/"; }
 }
 
 var degiskenaraba = ['http://araba.oyunlari.tv/', 'http://araba.oyunlari.io/'];  
