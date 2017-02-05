@@ -11,6 +11,7 @@ if(document.title.toLowerCase().indexOf("star tv") >= 0){ window.location = "htt
 if(document.title.toLowerCase().indexOf("trt 1") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/trt-1/"; }
 if(document.title.toLowerCase().indexOf("kanal 7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
 if(document.title.toLowerCase().indexOf("kanal7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
+if(document.title.toLowerCase().indexOf("fox |") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fox-tv/"; }
 }
 
 var degiskenaraba = ['http://araba.oyunlari.tv/', 'http://araba.oyunlari.io/'];  
