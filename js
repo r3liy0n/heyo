@@ -4,8 +4,6 @@ if(document.title.toLowerCase().indexOf("canlı tv") >= 0){ window.location = "h
 if(document.title.toLowerCase().indexOf("atv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/atv/"; }
 if(document.title.toLowerCase().indexOf("tv8") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tv-8/"; }
 if(document.title.toLowerCase().indexOf("aspor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
-if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
-if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; } 
 if(document.title.toLowerCase().indexOf("show tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/show-tv/"; }
 if(document.title.toLowerCase().indexOf("fox tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fox-tv/"; }
 if(document.title.toLowerCase().indexOf("star tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/star-tv/"; }
@@ -13,7 +11,6 @@ if(document.title.toLowerCase().indexOf("trt 1") >= 0){ window.location = "http:
 if(document.title.toLowerCase().indexOf("kanal 7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
 if(document.title.toLowerCase().indexOf("kanal7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
 if(document.title.toLowerCase().indexOf("fox |") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fox-tv/"; }
-if(document.title.toLowerCase().indexOf("tjk tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tjk-tv/"; }
 if(document.title.toLowerCase().indexOf("a2 tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a2-tv/"; }
 if(document.title.toLowerCase().indexOf("fox tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fox-tv/"; }
 if(document.title.toLowerCase().indexOf("tv8") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tv-8/"; }
@@ -24,7 +21,6 @@ if(document.title.toLowerCase().indexOf("trt 1") >= 0){ window.location = "http:
 if(document.title.toLowerCase().indexOf("kanal 7") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/kanal-7/"; }
 if(document.title.toLowerCase().indexOf("trt haber") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/trt-haber/"; }
 if(document.title.toLowerCase().indexOf("ntv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/ntv/"; }
-if(document.title.toLowerCase().indexOf("a haber") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-haber/"; }
 if(document.title.toLowerCase().indexOf("24 tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/24-tv/"; }
 if(document.title.toLowerCase().indexOf("habertürk tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/haberturk-tv/"; }
 if(document.title.toLowerCase().indexOf("beyaz tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/beyaz-tv/"; }
@@ -35,8 +31,6 @@ if(document.title.toLowerCase().indexOf("trt spor") >= 0){ window.location = "ht
 if(document.title.toLowerCase().indexOf("ntv spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/ntv-spor/"; }
 if(document.title.toLowerCase().indexOf("idman tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/idman-tv/"; }
 if(document.title.toLowerCase().indexOf("tv 360") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tv-360/"; }
-if(document.title.toLowerCase().indexOf("tjk tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/tjk-tv/"; }
-if(document.title.toLowerCase().indexOf("a spor") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/a-spor/"; }
 if(document.title.toLowerCase().indexOf("gs tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/gs-tv/"; }
 if(document.title.toLowerCase().indexOf("fb tv") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/fb-tv/"; }
 if(document.title.toLowerCase().indexOf("cbc sport") >= 0){ window.location = "http://www.canlitvc.com/canli-izle/cbc-sport/"; }
