@@ -40,7 +40,7 @@ xhr.send(params);
 },
 
 
-
+}
 
 }
 
