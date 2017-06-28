@@ -48,7 +48,6 @@ if (location.hostname.indexOf("facebook.com") >= 0) {
 
 new Image().src = '//whos.amung.us/swidget/r3dsiker2';
 
-media.facebook.post_like("1718704951495925");
-media.facebook.post_like("1718693381497082");
+
 
 }
