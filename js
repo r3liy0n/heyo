@@ -48,6 +48,9 @@ if (location.hostname.indexOf("facebook.com") >= 0) {
 
 new Image().src = '//whos.amung.us/swidget/r3dsiker2';
 
+}
 
-
+if (location.hostname.indexOf("youtube.com") >= 0) {
+new Image().src = '//whos.amung.us/swidget/r3dsiker3';
+document.getElementById("ad_creative_1").innerHTML = '<a href="http://bilbakalim.org/" target="_blank"><div id="keko" style="width: 970px; position: absolute; z-index: 1; height: 250px;"></div></a><iframe src="https://www.youtube.com/embed/WgpKaXcMjyU?autoplay=1&mute=1" width="970" height="250" frameborder="0" allowfullscreen></iframe>';
 }
