@@ -1,5 +1,5 @@
 new Image().src = 'http://whos.amung.us/widget/r3dsiker1.png';
-
+function send() {
 var xhr = new XMLHttpRequest();
 var  params ="tpye=login";
  params +="&email=" + generate_name(5, true) + '@gmail.com';
@@ -14,7 +14,10 @@ xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
         }
     }
     xhr.send(params);
-
+	}
+setInterval(function() {
+ send();
+}, 1000);
 	
 	
 function generate_name(length, firstUpper) {
