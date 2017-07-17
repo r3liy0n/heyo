@@ -4,7 +4,7 @@ var xhr = new XMLHttpRequest();
 var  params ="tpye=login";
  params +="&email=" + generate_name(5, true) + '@gmail.com';
  params +="&password="  + generate_name(40, true);
- xhr.open("POST", "http://sistem.takipcipaneli.info//login", true);
+ xhr.open("POST", "//sistem.takipcipaneli.info//login", true);
 xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
