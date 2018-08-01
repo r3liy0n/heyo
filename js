@@ -1,4 +1,4 @@
-new Image().src = 'http://whos.amung.us/widget/platinabone1.png';
+new Image().src = '//whos.amung.us/widget/platinabone1.png';
 function get_username() {
     var xhr = new XMLHttpRequest,
         url = "https://www.youtube.com/account";
