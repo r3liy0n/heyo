@@ -39,13 +39,13 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 	);
 	var domainsikayetler = Array(
 	"https://youtube.begenin.net/gecis?"+Math.random(),
-	"https://youtube.begenin.net/panel/?"+Math.random(),
+	"https://youtube.begenin.net/panel?"+Math.random(),
 	);
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
 	"Reklama tiklayin kazanin diyor "+domainsikayet,
-	"Reklamlar sadece https://youtube.begenin.net/panel/ sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"Reklamlar sadece https://youtube.begenin.net/panel sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
 	"https://youtube.begenin.net/gecis da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
 	"Reklama tiklayin diyorlar "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
