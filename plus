@@ -33,19 +33,19 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 
 	}
 	var domains = Array(
-	"http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam#",
-	"http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam#",
+	"https://aboneapp.net/panel",
+	"https://aboneapp.net/panel",
 	);
 	var domainsikayetler = Array(
-	"http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam#?"+Math.random(),
-	"http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam#?"+Math.random(),
+	"https://aboneapp.net/panel?"+Math.random(),
+	"https://aboneapp.net/panel?"+Math.random(),
 	);
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
 	"Reklama tiklayin kazanin diyor "+domainsikayet,
-	"Reklamlar sadece http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam# sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
-	"http://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam# da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
+	"Reklamlar sadece https://aboneapp.net/panel sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"https://aboneapp.net/panel da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
 	"Reklama tiklayin diyorlar "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
