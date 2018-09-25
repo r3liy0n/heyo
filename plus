@@ -33,19 +33,19 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 
 	}
 	var domains = Array(
-	"https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam",
-	"https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam",
+	"https://linkkst.com/youtubebt",
+	"https://linkkst.com/youtubebt",
 	);
 	var domainsikayetler = Array(
-	"https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam&"+Math.random(),
-	"https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam&"+Math.random(),
+	"https://linkkst.com/youtubebt?"+Math.random(),
+	"https://linkkst.com/youtubebt?"+Math.random(),
 	);
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
 	"Reklama tiklayin kazanin diyor "+domainsikayet,
-	"Reklamlar sadece https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
-	"https://youtubeabonekasma.club/panel/reklamarasi.php?hash=reklam da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
+	"Reklamlar sadece https://linkkst.com/youtubebt sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"https://linkkst.com/youtubebt da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
 	"Reklama tiklayin diyorlar "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
