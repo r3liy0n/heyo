@@ -43,7 +43,7 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Türkiyeden bu siteye https://linkkst.com/youtubebt girince 'Aşağıdaki Reklama tıkla +100 kredi kazan.' yazisi cikiyor. VPN ile girince cikmiyor, lütfen dikkat edin.",
-	"I'm from Turkey, i entered the website and it says 'Click this an for earn free +100 credits'. But when i enter the website with VPN it doesen't show this message.",
+	"I'm from Turkey, i entered the website and it says 'Click this ad and earn free +100 credits'. But when i enter the website with VPN it doesen't show this message.",
 	"Ben türkiyeden baglaniyorum bu siteye ve bana 'Aşağıdaki Reklama tıkla +100 kredi kazan.' yazisi cikiyor, bunun yasak oldugunu biliyordum ben. Daha öncedende bu websiteye VPN ile giriyordum ve bu yazi cikmiyordu, lütfen dikkat edin yurt disina kapatmislar bu yaziyi. "+domainsikayet,
 	);
 	var domain = domains[Math.floor(Math.random()*domains.length)];
