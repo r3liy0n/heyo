@@ -33,18 +33,22 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 
 	}
 	var domains = Array(
-	"https://linkkst.com/youtubebt",
-	"https://linkkst.com/youtubebt",
+	"http://www.ythilem.com/gecis.php",
+	"http://www.ythilem.com/gecis.php",
 	);
 	var domainsikayetler = Array(
-	"https://linkkst.com/youtubebt?"+Math.random(),
-	"https://linkkst.com/youtubebt?"+Math.random(),
+	"http://www.ythilem.com/gecis.php?"+Math.random(),
+	"http://www.ythilem.com/gecis.php?"+Math.random(),
 	);
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
-	"Türkiyeden bu siteye https://linkkst.com/youtubebt girince 'Aşağıdaki Reklama tıkla +100 kredi kazan.' yazisi cikiyor. VPN ile girince cikmiyor, lütfen dikkat edin.",
-	"I'm from Turkey, i entered the website and it says 'Click this ad and earn free +100 credits'. But when i enter the website with VPN it doesen't show this message.",
-	"Ben türkiyeden baglaniyorum bu siteye ve bana 'Aşağıdaki Reklama tıkla +100 kredi kazan.' yazisi cikiyor, bunun yasak oldugunu biliyordum ben. Daha öncedende bu websiteye VPN ile giriyordum ve bu yazi cikmiyordu, lütfen dikkat edin yurt disina kapatmislar bu yaziyi. "+domainsikayet,
+	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
+	"Reklama tiklayin kazanin diyor "+domainsikayet,
+	"Reklamlar sadece http://www.ythilem.com/gecis.php sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"http://www.ythilem.com/gecis.php da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
+	"Reklama tiklayin diyorlar "+domainsikayet,
+	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
+	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
 	);
 	var domain = domains[Math.floor(Math.random()*domains.length)];
 	var sikayet = sikayetler[Math.floor(Math.random()*sikayetler.length)];
@@ -52,7 +56,6 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 	document.querySelectorAll("input#usertype--neither")[0].checked = true
 	document.querySelectorAll("input#url")[0].value = domain;
 
-	document.querySelectorAll("input#ad_violation--mass_email")[0].checked = true
 	document.querySelectorAll("input#typeofmedia--website")[0].checked = true
 	document.querySelectorAll("input#violation--other_content")[0].checked = true
 	document.querySelectorAll("input#ad_violation--encouraging_clicks")[0].checked = true
