@@ -1,4 +1,3 @@
-
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -34,19 +33,19 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 
 	}
 	var domains = Array(
-	"https://linkkst.com/youtubebt",
-	"https://linkkst.com/youtubebt",
+	"https://www.youtubehile.com/asd/gecis.php",
+	"https://www.youtubehile.com/asd/gecis.php",
 	);
 	var domainsikayetler = Array(
-	"https://linkkst.com/youtubebt?"+Math.random(),
-	"https://linkkst.com/youtubebt?"+Math.random(),
+	"https://www.youtubehile.com/asd/gecis.php?"+Math.random(),
+	"https://www.youtubehile.com/asd/gecis.php?"+Math.random(),
 	);
-	var domainsikayet = domains[Math.floor(Math.random()*domains.length)];
+	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
 	"Reklama tiklayin kazanin diyor "+domainsikayet,
-	"Reklamlar sadece https://aboneapp.com/panel/ sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
-	"https://aboneapp.com/gecis da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
+	"Reklamlar sadece https://www.youtubehile.com/asd/gecis.php sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"https://www.youtubehile.com/asd/gecis.php da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
 	"Reklama tiklayin diyorlar "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
