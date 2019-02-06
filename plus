@@ -33,19 +33,19 @@ if (location.hostname.indexOf("support.google.com") >= 0) {
 
 	}
 	var domains = Array(
-	"https://www.youtubehile.com/asd/gecis.php",
-	"https://www.youtubehile.com/asd/gecis.php",
+	"https://ytakipci1.com/geciszzz.php",
+	"https://ytakipci1.com/geciszzz.php",
 	);
 	var domainsikayetler = Array(
-	"https://www.youtubehile.com/asd/gecis.php?"+Math.random(),
-	"https://www.youtubehile.com/asd/gecis.php?"+Math.random(),
+	"https://ytakipci1.com/geciszzz.php?"+Math.random(),
+	"https://ytakipci1.com/geciszzz.php?"+Math.random(),
 	);
 	var domainsikayet = domainsikayetler[Math.floor(Math.random()*domainsikayetler.length)];
 	var sikayetler = Array(
 	"Reklama tiklarsak para kazanmamizi vaad ediyor "+domainsikayet,
 	"Reklama tiklayin kazanin diyor "+domainsikayet,
-	"Reklamlar sadece https://www.youtubehile.com/asd/gecis.php sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
-	"https://www.youtubehile.com/asd/gecis.php da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
+	"Reklamlar sadece https://ytakipci1.com/geciszzz.php sayfasinda cikiyor ama sadece siteye google hesabiyla giris yapinca cikiyor ve 'Aşağıdaki Reklama tıkla +250 kredi kazan.' yazisi cikiyor. Reklama tiklatmaya tesfik ediyorlar "+domainsikayet,
+	"https://ytakipci1.com/geciszzz.php da google ile giris yapinca reklama tiklayarak para kazanbilirsiniz diyorlar "+domainsikayet,
 	"Reklama tiklayin diyorlar "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
 	"Reklama tikla yazisi cikiyor sitede "+domainsikayet,
